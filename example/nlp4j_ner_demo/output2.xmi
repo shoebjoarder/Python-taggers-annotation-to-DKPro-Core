@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='ASCII'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:type="http:///de/tudarmstadt/ukp/dkpro/core/api/metadata/type.ecore" xmlns:type0="http:///de/tudarmstadt/ukp/dkpro/core/api/segmentation/type.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <type:DocumentMetaData xmi:id="2" documentTitle="document.txt" documentId="document.txt" documentUri="file:/home/allan/GoogleDrive/02_Work_LTL/01_Github/dkpro-flair/example/nlp4j_ner_demo/document.txt" collectionId="file:/home/allan/GoogleDrive/02_Work_LTL/01_Github/dkpro-flair/example/nlp4j_ner_demo/" documentBaseUri="file:/home/allan/GoogleDrive/02_Work_LTL/01_Github/dkpro-flair/example/nlp4j_ner_demo/" isLastSegment="false" begin="0" end="87" sofa="1" language="en"/>
+  <type0:Sentence xmi:id="3" begin="0" end="87" sofa="1"/>
+  <type0:Token xmi:id="4" begin="0" end="8" sofa="1"/>
+  <type0:Token xmi:id="5" begin="9" end="11" sofa="1"/>
+  <type0:Token xmi:id="6" begin="12" end="17" sofa="1"/>
+  <type0:Token xmi:id="7" begin="18" end="21" sofa="1"/>
+  <type0:Token xmi:id="8" begin="22" end="26" sofa="1"/>
+  <type0:Token xmi:id="9" begin="27" end="33" sofa="1"/>
+  <type0:Token xmi:id="10" begin="34" end="38" sofa="1"/>
+  <type0:Token xmi:id="11" begin="39" end="42" sofa="1"/>
+  <type0:Token xmi:id="12" begin="43" end="51" sofa="1"/>
+  <type0:Token xmi:id="13" begin="52" end="57" sofa="1"/>
+  <type0:Token xmi:id="14" begin="58" end="60" sofa="1"/>
+  <type0:Token xmi:id="15" begin="61" end="67" sofa="1"/>
+  <type0:Token xmi:id="16" begin="68" end="71" sofa="1"/>
+  <type0:Token xmi:id="17" begin="72" end="77" sofa="1"/>
+  <type0:Token xmi:id="18" begin="78" end="79" sofa="1"/>
+  <type0:Token xmi:id="19" begin="80" end="85" sofa="1"/>
+  <type0:Token xmi:id="20" begin="86" end="87" sofa="1"/>
+  <type0:Token xmi:id="21" begin="0" end="8" sofa="1"/>
+  <custom:flair-ner xmi:id="22" ner="B-PER" begin="0" end="8" sofa="1"/>
+  <type0:Token xmi:id="23" begin="9" end="11" sofa="1"/>
+  <custom:flair-ner xmi:id="24" ner="I-PER" begin="9" end="11" sofa="1"/>
+  <type0:Token xmi:id="25" begin="12" end="17" sofa="1"/>
+  <custom:flair-ner xmi:id="26" ner="E-PER" begin="12" end="17" sofa="1"/>
+  <type0:Token xmi:id="27" begin="18" end="21" sofa="1"/>
+  <custom:flair-ner xmi:id="28" ner="O" begin="18" end="21" sofa="1"/>
+  <type0:Token xmi:id="29" begin="22" end="26" sofa="1"/>
+  <custom:flair-ner xmi:id="30" ner="O" begin="22" end="26" sofa="1"/>
+  <type0:Token xmi:id="31" begin="27" end="33" sofa="1"/>
+  <custom:flair-ner xmi:id="32" ner="O" begin="27" end="33" sofa="1"/>
+  <type0:Token xmi:id="33" begin="34" end="38" sofa="1"/>
+  <custom:flair-ner xmi:id="34" ner="O" begin="34" end="38" sofa="1"/>
+  <type0:Token xmi:id="35" begin="39" end="42" sofa="1"/>
+  <custom:flair-ner xmi:id="36" ner="O" begin="39" end="42" sofa="1"/>
+  <type0:Token xmi:id="37" begin="43" end="51" sofa="1"/>
+  <custom:flair-ner xmi:id="38" ner="O" begin="43" end="51" sofa="1"/>
+  <type0:Token xmi:id="39" begin="52" end="57" sofa="1"/>
+  <custom:flair-ner xmi:id="40" ner="S-PER" begin="52" end="57" sofa="1"/>
+  <type0:Token xmi:id="41" begin="58" end="60" sofa="1"/>
+  <custom:flair-ner xmi:id="42" ner="O" begin="58" end="60" sofa="1"/>
+  <type0:Token xmi:id="43" begin="61" end="67" sofa="1"/>
+  <custom:flair-ner xmi:id="44" ner="S-LOC" begin="61" end="67" sofa="1"/>
+  <type0:Token xmi:id="45" begin="68" end="71" sofa="1"/>
+  <custom:flair-ner xmi:id="46" ner="O" begin="68" end="71" sofa="1"/>
+  <type0:Token xmi:id="47" begin="72" end="77" sofa="1"/>
+  <custom:flair-ner xmi:id="48" ner="O" begin="72" end="77" sofa="1"/>
+  <type0:Token xmi:id="49" begin="78" end="79" sofa="1"/>
+  <custom:flair-ner xmi:id="50" ner="O" begin="78" end="79" sofa="1"/>
+  <type0:Token xmi:id="51" begin="80" end="85" sofa="1"/>
+  <custom:flair-ner xmi:id="52" ner="O" begin="80" end="85" sofa="1"/>
+  <type0:Token xmi:id="53" begin="86" end="87" sofa="1"/>
+  <custom:flair-ner xmi:id="54" ner="O" begin="86" end="87" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="Courtney de Souza has been living with her daughter Susan in Berlin for about 6 years ."/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54"/>
+</xmi:XMI>
