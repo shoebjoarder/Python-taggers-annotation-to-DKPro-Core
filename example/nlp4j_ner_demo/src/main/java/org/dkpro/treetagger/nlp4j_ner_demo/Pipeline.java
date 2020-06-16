@@ -21,6 +21,7 @@ public class Pipeline {
 	  String text_doc = "document.txt";;
 	  String output1_xmi = "output1.xmi";
 	  String ts1_xml = "ts1.xml";
+	  String conll1 = "doc1.conll";
 		
 	  runPipeline(
 			  createReaderDescription(TextReader.class,
@@ -42,6 +43,6 @@ public class Pipeline {
 					  XmiWriter.PARAM_TARGET_LOCATION, output1_xmi,
 					  XmiWriter.PARAM_TYPE_SYSTEM_FILE, ts1_xml),
 			  createEngineDescription(Conll2006Writer.class,
-					  Conll2006Writer.PARAM_TARGET_LOCATION, "."));
+					  Conll2006Writer.PARAM_TARGET_LOCATION, conll1));
   }
 }

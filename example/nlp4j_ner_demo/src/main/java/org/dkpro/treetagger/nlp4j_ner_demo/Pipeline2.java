@@ -22,6 +22,7 @@ public class Pipeline2 {
 		String in_xmi = "output2.xmi";
 		String output3_xmi = "output3.xmi";
 		String ts3_xml = "ts3.xml";
+		String conll2 = "doc2.conll";
 		
 	    runPipeline(
 	        createReaderDescription(XmiReader.class,
@@ -34,6 +35,6 @@ public class Pipeline2 {
 					XmiWriter.PARAM_TARGET_LOCATION, output3_xmi,
 					XmiWriter.PARAM_TYPE_SYSTEM_FILE, ts3_xml),
 			createEngineDescription(Conll2006Writer.class,
-		            Conll2006Writer.PARAM_TARGET_LOCATION, "."));
+		            Conll2006Writer.PARAM_TARGET_LOCATION, conll2));
   }
 }
