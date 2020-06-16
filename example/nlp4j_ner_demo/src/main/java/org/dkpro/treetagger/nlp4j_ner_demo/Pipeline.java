@@ -29,16 +29,7 @@ public class Pipeline {
 					  TextReader.PARAM_LANGUAGE, "en"),
         
 			  createEngineDescription(OpenNlpSegmenter.class),
-        
-//			  createEngineDescription(OpenNlpPosTagger.class),
-	        
-//			  createEngineDescription(OpenNlpNamedEntityRecognizer.class,
-//					  OpenNlpNamedEntityRecognizer.PARAM_VARIANT, "person"),
-//			  createEngineDescription(OpenNlpNamedEntityRecognizer.class,
-//					  OpenNlpNamedEntityRecognizer.PARAM_VARIANT, "organization"),
-//			  createEngineDescription(XmiWriter.class,
-//					  XmiWriter.PARAM_TARGET_LOCATION, "."));
-			  
+       			  
 			  createEngineDescription(XmiWriter.class,
 					  XmiWriter.PARAM_TARGET_LOCATION, output1_xmi,
 					  XmiWriter.PARAM_TYPE_SYSTEM_FILE, ts1_xml),
