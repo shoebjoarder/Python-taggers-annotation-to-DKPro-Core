@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ASCII'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:type="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <type:NamedEntity xmi:id="2" value="person" begin="0" end="5" sofa="1"/>
+  <type:NamedEntity xmi:id="3" value="location" begin="18" end="35" sofa="1"/>
+  <type:NamedEntity xmi:id="4" value="location" begin="79" end="92" sofa="1"/>
+  <type:NamedEntity xmi:id="5" value="organization" begin="117" end="136" sofa="1"/>
+  <type:NamedEntity xmi:id="6" value="location" begin="184" end="191" sofa="1"/>
+  <type:NamedEntity xmi:id="7" value="location" begin="218" end="237" sofa="1"/>
+  <type:NamedEntity xmi:id="8" value="organization" begin="286" end="304" sofa="1"/>
+  <type:NamedEntity xmi:id="9" value="organization" begin="411" end="443" sofa="1"/>
+  <type:NamedEntity xmi:id="10" value="location" begin="555" end="571" sofa="1"/>
+  <type:NamedEntity xmi:id="11" value="location" begin="592" end="596" sofa="1"/>
+  <type:NamedEntity xmi:id="12" value="person" begin="605" end="610" sofa="1"/>
+  <type:NamedEntity xmi:id="13" value="organization" begin="662" end="668" sofa="1"/>
+  <type:NamedEntity xmi:id="14" value="miscellaneous" begin="705" end="735" sofa="1"/>
+  <type:NamedEntity xmi:id="15" value="organization" begin="796" end="802" sofa="1"/>
+  <type:NamedEntity xmi:id="16" value="person" begin="933" end="948" sofa="1"/>
+  <type:NamedEntity xmi:id="17" value="person" begin="951" end="956" sofa="1"/>
+  <type:NamedEntity xmi:id="18" value="miscellaneous" begin="974" end="984" sofa="1"/>
+  <type:NamedEntity xmi:id="19" value="person" begin="985" end="996" sofa="1"/>
+  <type:NamedEntity xmi:id="20" value="person" begin="1027" end="1036" sofa="1"/>
+  <type:NamedEntity xmi:id="21" value="miscellaneous" begin="1100" end="1117" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="None" sofaString="None"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21"/>
+</xmi:XMI>
