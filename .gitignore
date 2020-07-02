@@ -1,2 +1,8 @@
 /.ipynb_checkpoints
 /.gitignore
+/.vscode
+/.git
+/__pycache__
+/.classpath/
+/example/nlp4j_ner_demo/.project/
+/example/nlp4j_ner_demo/.classpath/
