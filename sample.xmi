@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ASCII'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:type="http:///de/tudarmstadt/ukp/dkpro/core/api/ner/type.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <type:NamedEntity xmi:id="2" value="person" begin="0" end="6" sofa="1"/>
+  <type:NamedEntity xmi:id="3" value="location" begin="18" end="26" sofa="1"/>
+  <type:NamedEntity xmi:id="4" value="location" begin="29" end="35" sofa="1"/>
+  <type:NamedEntity xmi:id="5" value="location" begin="96" end="109" sofa="1"/>
+  <type:NamedEntity xmi:id="6" value="organization" begin="134" end="153" sofa="1"/>
+  <type:NamedEntity xmi:id="7" value="location" begin="202" end="209" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="None" sofaString="Obama was born in Honolulu , Hawaii , making him the first president not born in the contiguous United States . After graduating from Columbia University in 1983 , he worked as a community organizer in Chicago ."/>
+  <cas:View sofa="1" members="2 3 4 5 6 7"/>
+</xmi:XMI>

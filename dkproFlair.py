@@ -12,10 +12,9 @@ def importData(file):
     return document
 
 
-def casFlair(docu):
-    document = importData(docu)
+def casFlair(sentence):
     model_name = 'ner'
-    sentence = Sentence(document)
+    sentence = Sentence(sentence)
     nlp = SequenceTagger.load(model_name)
     nlp.predict(sentence)
     cas = Cas(typesystem=load_dkpro_core_typesystem())
@@ -31,32 +30,18 @@ def casFlair(docu):
         if span.tag == 'MISC':
             val = "miscellaneous"
         ner_annotation = NERType(begin=span.start_pos,
-                                    end=span.end_pos,
-                                    value=val)
+                                 end=span.end_pos,
+                                 value=val)
         cas.add_annotation(ner_annotation)
-        cas.to_xmi('./flairTEST.xmi', pretty_print=True)
-        with open('flairTEST.xmi', 'r') as file:
-            flairXMI = file.read()
-    return flairXMI
+        return cas
+    
+    #     # Export to xmi file
+    #     cas.to_xmi('./flair_test.xmi', pretty_print=True)
+    #     with open('flair_test.xmi', 'r') as file:
+    #         flairXMI = file.read()
+    # return flairXMI
 
 
-
-# def outputXMI(xmifile):
-#     xmifile.to_xmi('./flairNLP.xmi', pretty_print=True)
-
-# def casFlair(argv):
-#     inputFile = ""
-#     outputFile = ""
-#     try:
-#         opts, args = getopt.getopt(argv, "hi:o", ["ifile=", "ofile="])
-#     except getopt.GetoptError:
-#         print 'flairpoc.py -i <inputfile> -o <outputfile>'
-#         sys.exit(2)
-#     for opt, arg in opts:
-#         if opt == '-h':
-#             print 'flairpoc.py -i <inputfile> -o <outputfile>'
-#             sys.exit()
-#         elif opt in ("-i", "--ifile"):
-#             inputFile = arg
-#         elif opt in ("-o", "--ofile"):
-#             outputFile = arg
+# if __name__ == '__main__':
+#     data = importData('document.txt')
+#     cas = casFlair(data)
