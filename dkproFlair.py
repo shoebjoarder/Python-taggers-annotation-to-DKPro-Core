@@ -14,13 +14,15 @@ def importData(file):
 
 def casFlair(sentence):
     model_name = 'ner'
-    sentence = Sentence(sentence)
-    nlp = SequenceTagger.load(model_name)
-    nlp.predict(sentence)
     cas = Cas(typesystem=load_dkpro_core_typesystem())
+    cas.sofa_string = sentence
+    cas.sofa_mime = "text"
+    sent = Sentence(sentence)
+    nlp = SequenceTagger.load(model_name)
+    nlp.predict(sent)
     NERType = cas.typesystem.get_type(
         "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity")
-    for span in sentence.get_spans('ner'):
+    for span in sent.get_spans('ner'):
         if span.tag == 'PER':
             val = 'person'
         if span.tag == 'LOC':
@@ -33,8 +35,8 @@ def casFlair(sentence):
                                  end=span.end_pos,
                                  value=val)
         cas.add_annotation(ner_annotation)
-        return cas
-    
+    return cas
+
     #     # Export to xmi file
     #     cas.to_xmi('./flair_test.xmi', pretty_print=True)
     #     with open('flair_test.xmi', 'r') as file:
@@ -45,3 +47,8 @@ def casFlair(sentence):
 # if __name__ == '__main__':
 #     data = importData('document.txt')
 #     cas = casFlair(data)
+#     list = []
+#     for token in cas.select("de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"):
+#         list.append(token)
+
+#     print(list)
