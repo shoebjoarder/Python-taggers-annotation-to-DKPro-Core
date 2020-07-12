@@ -45,10 +45,10 @@ def casFlair(sentence):
 
 
 # if __name__ == '__main__':
-#     data = importData('document.txt')
-#     cas = casFlair(data)
-#     list = []
-#     for token in cas.select("de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"):
-#         list.append(token)
+    # data = importData('document.txt')
+    # cas = casFlair(data)
+    # list = []
+    # for token in cas.select("de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"):
+    #     list.append(token)
 
 #     print(list)
