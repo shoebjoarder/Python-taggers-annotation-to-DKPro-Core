@@ -27,12 +27,18 @@ class TestDkproFlair(unittest.TestCase):
 
         expectedList = []
         for token in expectedCas.select("de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"):
-            expectedList.append(str(token.begin) + "/" + str(token.end) + "/" + token.value)
+            # expectedList.append(str(token.begin) + "/" + str(token.end) + "/" + token.value)
+            expectedList.append(token.begin)
+            expectedList.append(token.end)
+            expectedList.append(token.value)
 
         # Test
         testCas = dkproFlair.casFlair(sentence)
         testList = []
         for token in testCas.select("de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"):
-            testList.append(str(token.begin) + "/" + str(token.end) + "/" + token.value)
+            # testList.append(str(token.begin) + "/" + str(token.end) + "/" + token.value)
+            testList.append(token.begin)
+            testList.append(token.end)
+            testList.append(token.value)
 
         self.assertEqual(testList, expectedList)
