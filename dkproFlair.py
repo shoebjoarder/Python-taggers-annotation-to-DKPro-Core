@@ -38,14 +38,14 @@ def casFlair(sentence):
     return cas
 
     #     # Export to xmi file
-    #     cas.to_xmi('./flair_test.xmi', pretty_print=True)
-    #     with open('flair_test.xmi', 'r') as file:
+    #     cas.to_xmi('./output_Flair.xmi', pretty_print=True)
+    #     with open('output_Flair.xmi', 'r') as file:
     #         flairXMI = file.read()
     # return flairXMI
 
 
 # if __name__ == '__main__':
-    # data = importData('document.txt')
+    # data = importData('./data/document.txt')
     # cas = casFlair(data)
     # list = []
     # for token in cas.select("de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity"):
