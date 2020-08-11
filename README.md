@@ -15,7 +15,7 @@ DKPro Core is Java based and it integrates taggers e.g. StanfordNLP, OpenNLP etc
 
 ![POCWorkflow](doc/pocSlide.jpg)
 
-In order to complete this PoC, four files were needed:
+In order to complete this PoC, three files were needed:
 - 2 Java files
     - Tokenizer
         - Outputs XMI and TypeSystem files
