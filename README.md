@@ -44,4 +44,4 @@ A detailed description of the workflow and usage can be found [here](/doc/USAGE.
 
 ## Acknowledgement
 
-- [Piush Agarwal](https://www.ltl.uni-due.de/team/piush-aggarwal)
+- [Piush Aggarwal](https://www.ltl.uni-due.de/team/piush-aggarwal)
