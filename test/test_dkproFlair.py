@@ -1,5 +1,8 @@
 import unittest
 from cassis import *
+import sys
+import os
+sys.path.append(os.getcwd() + '/..')
 import dkproFlair
 
 

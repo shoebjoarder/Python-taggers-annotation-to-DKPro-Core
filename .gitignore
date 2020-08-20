@@ -5,5 +5,5 @@
 /__pycache__
 /.classpath/
 /example/
-/example/
+__pycache__/
 /trail.ipynb
