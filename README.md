@@ -45,3 +45,4 @@ A detailed description of the workflow and usage can be found [here](/doc/USAGE.
 ## Acknowledgement
 
 - [Piush Aggarwal](https://www.ltl.uni-due.de/team/piush-aggarwal)
+- [Prof. Torsten Zesch](https://www.ltl.uni-due.de/team/torsten-zesch)
