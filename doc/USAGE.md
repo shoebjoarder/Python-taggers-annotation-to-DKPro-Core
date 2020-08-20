@@ -125,7 +125,7 @@ public class Pipeline {
 
     public static void main(String[] args) throws Exception {
 
-        String in_xmi = "flairNLP.xmi";
+        String in_xmi = "output_FlairNER.xmi";
 
         runPipeline(
             createReaderDescription(XmiReader.class,
