@@ -31,6 +31,30 @@
     pip install -r requirements.txt
 ```
 
+- Flair uses PyTorch and correct version of PyTorch is required to smoothly work in machine
+- If Nvidia GPU is required, then follow the steps
+
+Step 1: Check the CUDA version by typing the following command in a Command Prompt
+```
+    nvidia-smi
+```
+Step 2: 
+
+- If the CUDA version is 11, then type the following command
+```
+    pip install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+- If the CUDA version is 10, then type the following command
+```
+    pip install torch==1.4.0+cu100 torchvision==0.5.0+cu100 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Step 3: Verify if PyTorch is running CUDA, open a Command Prompt and type ```python```
+```
+    import torch
+    torch.cuda.is_available()
+```
+
 ## Installation Guide for Linux Users
 
 ### Install pip
@@ -60,6 +84,31 @@
     $ source ./bin/activate
     $ pip install -r requirements.txt
 ```
+
+- Flair uses PyTorch and correct version of PyTorch is required to smoothly work in machine
+- If Nvidia GPU is required, then follow the steps
+
+Step 1: Check the CUDA version by typing the following command in a Command Prompt
+```
+    nvidia-smi
+```
+Step 2: 
+
+- If the CUDA version is 11, then type the following command
+```
+    pip install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+- If the CUDA version is 10, then type the following command
+```
+    pip install torch==1.4.0+cu100 torchvision==0.5.0+cu100 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Step 3: Verify if PyTorch is running CUDA, open a Command Prompt and type ```python```
+```
+    import torch
+    torch.cuda.is_available()
+```
+
 
 ## Use Jupyter (Windows and Linux)
 - Open a terminal / Command Prompt window
