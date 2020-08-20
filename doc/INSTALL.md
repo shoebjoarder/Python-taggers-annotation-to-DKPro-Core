@@ -120,9 +120,9 @@ Ubuntu
 ```
 Windows
 ```
-C:\Users\username\DKPFNLP\Scripts\activate
+    C:\Users\username\DKPFNLP\Scripts\activate
 ```
-- Type in
+- Type the following command
 ```
     jupyter notebook
 ```
