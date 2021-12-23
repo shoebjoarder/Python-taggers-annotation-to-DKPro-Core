@@ -11,11 +11,12 @@ DKPro Core is Java based and it integrates taggers e.g. StanfordNLP, OpenNLP etc
 > Flair is a powerful NLP library. Flair allows you to apply our state-of-the-art natural language processing (NLP) models to your text, such as named entity recognition (NER), part-of-speech tagging (PoS), sense disambiguation and classification.
 
 [DKPro-Cassis](https://github.com/dkpro/dkpro-cassis):
+
 > DKPro-Cassis is a pure-Python implementation of the Common Analysis System (CAS) as defined by the UIMA framework. The CAS is a data structure representing an object to be enriched with annotations (the so-called Subject of Analysis, short SofA).
 
 ## Demo version
 
-An example of the use case can be found under ``Example/dkpro_flairnlp_ner_poc.ipynb``
+An example of the use case can be found under `Example/dkpro_flairnlp_ner_poc.ipynb`
 
 ## System requirements
 
@@ -24,7 +25,7 @@ An example of the use case can be found under ``Example/dkpro_flairnlp_ner_poc.i
 ## Installation Guide
 
 A complete installation guide for both Windows and Linux users can be found [here](doc/INSTALL.md).
-    
+
 ## Features
 
 - Using DKPro Cassis to annotate Flair NLP NER-tags
@@ -32,12 +33,13 @@ A complete installation guide for both Windows and Linux users can be found [her
 
 ## Workflow and Usage
 
-![PoCWorkflow](doc/screenshots/workflow.jpg)
+![PoCWorkflow](doc/screenshots/workflow.png)
 
 In order to complete this PoC, three files were needed:
+
 - 2 Java files
-    - Tokenizer (it outputs XMI and TypeSystem files)
-    - POS-Tagger (it takes Flair XMI file as input and outputs annotated XMI file)
+  - Tokenizer (it outputs XMI and TypeSystem files)
+  - POS-Tagger (it takes Flair XMI file as input and outputs annotated XMI file)
 - 1 Jupyter Notebook file (it takes CAS object as input, executes Flair NER and annotates the CAS object with NER-tags)
 
 A detailed description of the workflow and usage can be found [here](/doc/USAGE.md)
